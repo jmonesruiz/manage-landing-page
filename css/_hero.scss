@@ -1,0 +1,67 @@
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	margin: 0 auto;
+	padding: var(--side-padding);
+	max-width: 126rem;
+
+	& > * {
+		flex-basis: 50%;
+	}
+	&__heading {
+		margin-bottom: 3.5rem;
+	}
+	&__text {
+		max-width: 60%;
+		margin-bottom: 4rem;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	@media screen and (max-width: $tablet-mq) {
+		flex-direction: column;
+		text-align: center;
+		padding: 2rem 4rem 6rem;
+		gap: 4rem;
+
+		&__text {
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 70%;
+		}
+		&__img {
+			width: 80%;
+		}
+	}
+
+	@media screen and (max-width: $big-phone-mq) {
+		&__text {
+			max-width: 80%;
+		}
+	}
+
+	@media screen and (max-width: $phone-mq) {
+		flex-direction: column-reverse;
+		padding-top: 0;
+		gap: 0;
+
+		&__heading {
+			margin-bottom: 2rem;
+		}
+		&__text {
+			font-size: 1.6rem;
+			max-width: 85%;
+			margin-bottom: 3rem;
+		}
+	}
+
+	@media screen and (max-width: $small-phone-mq) {
+		&__text {
+			max-width: 100%;
+		}
+	}
+}

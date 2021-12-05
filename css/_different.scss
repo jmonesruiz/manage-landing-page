@@ -1,0 +1,55 @@
+.different {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 2rem;
+	margin: 0 auto;
+	padding: 6rem var(--side-padding);
+	max-width: 126rem;
+
+	& > * {
+		flex-basis: 50%;
+	}
+
+	&__heading {
+		margin-bottom: 3rem;
+	}
+
+	&__text {
+		max-width: 60%;
+	}
+
+	@media screen and (max-width: $tablet-mq) {
+		flex-direction: column;
+		text-align: center;
+		overflow: hidden;
+		gap: 8rem;
+		padding-top: 0rem;
+
+		&__text {
+			max-width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	@media screen and (max-width: $big-phone-mq) {
+		gap: 6rem;
+		&__text {
+			max-width: 80%;
+		}
+	}
+
+	@media screen and (max-width: $phone-mq) {
+		gap: 4rem;
+		&__text {
+			max-width: 90%;
+		}
+	}
+
+	@media screen and (max-width: $small-phone-mq) {
+		&__text {
+			max-width: 100%;
+		}
+	}
+}

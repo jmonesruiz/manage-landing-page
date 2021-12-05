@@ -1,0 +1,36 @@
+.simplify {
+	background-color: $primary-color;
+	background-image: url("../images/bg-simplify-section-desktop.svg");
+	background-size: cover;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding: 6rem var(--side-padding);
+		max-width: 126rem;
+		gap: 3rem;
+	}
+
+	&__heading {
+		flex: 0 1 50rem;
+	}
+
+	&__btn {
+		flex: 0 0 auto;
+	}
+
+	@media screen and (max-width: $big-phone-mq) {
+		&__container {
+			flex-direction: column;
+			padding: 10rem var(--side-padding);
+		}
+
+		&__heading {
+			text-align: center;
+			flex: auto;
+			max-width: 50rem;
+		}
+	}
+}

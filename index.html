@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<title>Manage</title>
+	</head>
+	<body>
+		<header class="header">
+			<a href="#" class="logo__link header__logo">
+				<svg class="logo__img">
+					<use xlink:href="images/sprite.svg#logo"></use>
+				</svg>
+			</a>
+			<nav id="nav" class="nav">
+				<ul class="nav__items">
+					<li class="nav__item">
+						<a href="#" class="nav__link">Pricing</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Product</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">About Us</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Careers</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">Community</a>
+					</li>
+				</ul>
+			</nav>
+
+			<a href="#" class="btn header__btn">Get Started</a>
+			<label class="hamburger" for="hamburger-checkbox">
+				<input
+					type="checkbox"
+					name="hamburger-checkbox"
+					id="hamburger-checkbox"
+					class="hamburger__checkbox"
+				/>
+				<div class="hamburger__imgs">
+					<svg class="hamburger__img hamburger__img-closed">
+						<use xlink:href="images/sprite.svg#icon-hamburger"></use>
+					</svg>
+					<svg class="hamburger__img hamburger__img-open">
+						<use xlink:href="images/sprite.svg#icon-close"></use>
+					</svg>
+				</div>
+			</label>
+			<div class="mobile-nav-overlay"></div>
+		</header>
+		<section class="hero">
+			<div class="hero__text-container">
+				<h1 class="heading-primary hero__heading">
+					Bring everyone together to build better products.
+				</h1>
+				<p class="hero__text">
+					Manage makes it simple for software teams to plan day-to-day tasks while keeping
+					the larger team goals in view.
+				</p>
+				<a href="#" class="btn hero__btn">Get Started</a>
+			</div>
+			<div class="hero__img-container">
+				<img
+					class="hero__img"
+					src="./images/illustration-intro.svg"
+					alt="Graphs illustration"
+				/>
+			</div>
+		</section>
+		<section class="different">
+			<div class="different__text-container">
+				<h2 class="heading-secondary different__heading">What’s different about Manage?</h2>
+				<p class="different__text">
+					Manage provides all the functionality your team needs, without the complexity.
+					Our software is tailor-made for modern digital product teams.
+				</p>
+			</div>
+			<ol class="card-column">
+				<li class="card-column__card">
+					<h3 class="heading-tertiary card-column__card-heading">
+						Track company-wide progress
+					</h3>
+					<p class="card-column__card-text">
+						See how your day-to-day tasks fit into the wider vision. Go from tracking
+						progress at the milestone level all the way done to the smallest of details.
+						Never lose sight of the bigger picture again.
+					</p>
+				</li>
+				<li class="card-column__card">
+					<h3 class="heading-tertiary card-column__card-heading">
+						Advanced built-in reports
+					</h3>
+					<p class="card-column__card-text">
+						Set internal delivery estimates and track progress toward company goals. Our
+						customisable dashboard helps you build out the reports you need to keep key
+						stakeholders informed.
+					</p>
+				</li>
+				<li class="card-column__card">
+					<h3 class="heading-tertiary card-column__card-heading">
+						Everything you need in one place
+					</h3>
+					<p class="card-column__card-text">
+						Stop jumping from one service to another to communicate, store files, track
+						tasks and share documents. Manage offers an all-in-one team productivity
+						solution.
+					</p>
+				</li>
+			</ol>
+		</section>
+		<section class="testimonials">
+			<h2 class="heading-secondary testimonials__heading">What they’ve said</h2>
+			<div class="slider">
+				<button id="slider__button-left" class="slider__button slider__button-left">
+					<svg class="slider__button-img">
+						<use xlink:href="images/sprite.svg#chevron-thin-left"></use>
+					</svg>
+				</button>
+				<ul id="slider__items" class="slider__items">
+					<li class="slider__item">
+						<img
+							src="./images/avatar-anisha.png"
+							alt="Anisha Li's avatar"
+							class="slider__item-img"
+						/>
+						<h3 class="heading-tertiary slider__item-heading">Anisha Li</h3>
+						<p class="slider__item-text">
+							“Manage has supercharged our team’s workflow. The ability to maintain
+							visibility on larger milestones at all times keeps everyone motivated.”
+						</p>
+					</li>
+					<li class="slider__item">
+						<img
+							src="./images/avatar-ali.png"
+							alt="Ali Bravo's avatar"
+							class="slider__item-img"
+						/>
+						<h3 class="heading-tertiary slider__item-heading">Ali Bravo</h3>
+						<p class="slider__item-text">
+							“We have been able to cancel so many other subscriptions since using
+							Manage. There is no more cross-channel confusion and everyone is much
+							more focused.”
+						</p>
+					</li>
+					<li class="slider__item">
+						<img
+							src="./images/avatar-richard.png"
+							alt="Richard Watts's avatar"
+							class="slider__item-img"
+						/>
+						<h3 class="heading-tertiary slider__item-heading">Richard Watts</h3>
+						<p class="slider__item-text">
+							“Manage allows us to provide structure and process. It keeps us
+							organized and focused. I can’t stop recommending them to everyone I talk
+							to!”
+						</p>
+					</li>
+					<li class="slider__item">
+						<img
+							src="./images/avatar-shanai.png"
+							alt="Shanai Gough's avatar"
+							class="slider__item-img"
+						/>
+						<h3 class="heading-tertiary slider__item-heading">Shanai Gough</h3>
+						<p class="slider__item-text">
+							“Their software allows us to track, manage and collaborate on our
+							projects from anywhere. It keeps the whole team in-sync without being
+							intrusive.”
+						</p>
+					</li>
+				</ul>
+				<button id="slider__button-right" class="slider__button slider__button-right">
+					<svg class="slider__button-img">
+						<use xlink:href="images/sprite.svg#chevron-thin-right"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="slider__mobile-dots">
+				<button class="slider__mobile-dot"></button>
+				<button class="slider__mobile-dot slider__mobile-dot--active"></button>
+				<button class="slider__mobile-dot"></button>
+				<button class="slider__mobile-dot"></button>
+			</div>
+
+			<a href="#" class="btn testimonials__btn">Get Started</a>
+		</section>
+		<section class="simplify">
+			<div class="simplify__container">
+				<h2 class="heading-secondary heading-secondary--light simplify__heading">
+					Simplify how your team works today.
+				</h2>
+				<a href="#" class="btn btn--light simplify__btn">Get Started</a>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="#" class="logo__link footer__logo">
+					<svg class="logo__img">
+						<use xlink:href="images/sprite.svg#logo"></use>
+					</svg>
+				</a>
+				<div class="footer__social">
+					<a href="#" class="footer__social-link">
+						<svg class="footer__social-img">
+							<use xlink:href="images/sprite.svg#icon-facebook"></use>
+						</svg>
+					</a>
+					<a href="#" class="footer__social-link">
+						<svg class="footer__social-img">
+							<use xlink:href="images/sprite.svg#icon-youtube"></use>
+						</svg>
+					</a>
+					<a href="#" class="footer__social-link">
+						<svg class="footer__social-img">
+							<use xlink:href="images/sprite.svg#icon-twitter"></use>
+						</svg>
+					</a>
+					<a href="#" class="footer__social-link">
+						<svg class="footer__social-img">
+							<use xlink:href="images/sprite.svg#icon-pinterest"></use>
+						</svg>
+					</a>
+					<a href="#" class="footer__social-link">
+						<svg class="footer__social-img">
+							<use xlink:href="images/sprite.svg#icon-instagram"></use>
+						</svg>
+					</a>
+				</div>
+				<nav class="footer__nav">
+					<ul class="footer__nav-item-column">
+						<li class="footer__nav-item">
+							<a href="#" class="footer__nav-link">Home</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#" class="footer__nav-link">Pricing</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#" class="footer__nav-link">Products</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#" class="footer__nav-link">About Us</a>
+						</li>
+					</ul>
+					<ul class="footer__nav-item-column">
+						<li class="footer__nav-item">
+							<a href="#" class="footer__nav-link">Careers</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#" class="footer__nav-link">Community</a>
+						</li>
+						<li class="footer__nav-item">
+							<a href="#" class="footer__nav-link">Privacy Policy</a>
+						</li>
+					</ul>
+				</nav>
+				<form id="contact-form" class="footer__contact-form">
+					<input
+						type="email"
+						name="contact-form-email"
+						id="contact-form-email"
+						class="footer__contact-text-input"
+						placeholder="Updates in your inbox…"
+					/>
+					<p class="footer__contact-form-error">Please insert a valid email</p>
+					<button type="submit" class="footer__contact-submit">Go</button>
+				</form>
+				<p class="footer__cr">Copyright 2020. All Rights Reserved</p>
+			</div>
+		</footer>
+
+		<script src="main.js"></script>
+	</body>
+</html>
